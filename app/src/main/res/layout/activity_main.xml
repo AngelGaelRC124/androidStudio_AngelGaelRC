@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_user_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_rounded"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivUserIcon" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_rounded"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/tvSocialLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Social Login"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSocialLogin">
+
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/ivInstagram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_instagram" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
